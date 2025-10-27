@@ -113,7 +113,11 @@ function onSendMessage() {
       '<div class="user_message"><div>' + text + "</div></div>"
     );
     $(".chatbot_client_container").append(
-      '<div class="bot_message" id="bot_waiting"><div>...</div></div>'
+      '<div class="bot_message" id="bot_waiting"><div>' +
+        '<span class="typing_dot"></span>' +
+        '<span class="typing_dot"></span>' +
+        '<span class="typing_dot"></span>' +
+        "</div></div>"
     );
     scrollContainer();
   }
